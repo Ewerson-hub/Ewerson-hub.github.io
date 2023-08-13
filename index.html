@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+
+    <title>Meu Portifolio</title>
 </head>
-<body>
-    <h1>Hello Word</h1>
+
+<body class="background-primary">
+    <header class="color-primary">
+       <span id="span-logo">
+            <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
+            Ewerson
+       </span>
+        <nav>
+            <ul>
+                <li><a class="color-primary" href="#home">Home</a></li>
+                <li><a class="color-primary" href="#about">About Me</a></li>
+                <li><a class="color-primary" href="#projects">Projects</a></li>
+                <li><a class="color-primary" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <div id="home" class="full-screen color-primary">
+            <h1 id="apresentation">
+                Olá, Sou <span class="text_emphasis"> Ewerson Lucas</span>, estudante de Ciências da Computação e <span class="text_emphasis">Desenvolvedor de Software</span> ! </h1>
+            <h2 id="apresentation-2">Bem vindo ao meu <span class="text_emphasis"> Portifolio</span> !</h2>    
+            <span><img id="down-arrow" src="assets/imgs/arrow-down-2.svg" alt="down page"> </span>
+        </div>
+
+        <div id="about" class="background-secondary full-screen color-secundary">
+            <h1>ABOUT ME</h1>
+        </div>
+
+        <div id="projects" class="full-screen color-primary">
+            <h1>PROJECTS</h1>
+        </div>
+
+        <div id="contact" class="background-secondary full-screen color-secundary">
+            <h1>CONTACT</h1>
+        </div>
+    </main>
+
+    <footer class="background-primary">
+        <span>
+           <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
+        </span> 
+        <p>&copy 2023 Ewerson Lucas</p>
+    </footer>
+    
+   
 </body>
 </html>
