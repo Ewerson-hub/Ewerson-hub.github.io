@@ -7,8 +7,7 @@ header{
     padding-right: 2rem;
 
     background-color: #615031;
-    /* border-bottom: 0.5rem solid burlywood; */
-    /* box-shadow: 2px 3px #494949; */
+
     position: fixed;
     right: 0;
     left: 0;
@@ -42,7 +41,3 @@ img{
     height: 100px;
     color: var(--color_font_primary);
 }
-
-/* nav, img{
-    border: 1px solid red;
-} */

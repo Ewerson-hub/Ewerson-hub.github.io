@@ -1,0 +1,23 @@
+#about{
+    font-weight: bold;
+    width: 100%;
+    height: 100%; 
+}
+#about-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#about-content > div{
+    border: 1px solid red;
+}
+
+/* #about-img{
+    width: 30%;
+    height: 80vh;
+} */
+#about-img > img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}

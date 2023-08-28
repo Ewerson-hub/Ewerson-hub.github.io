@@ -1,0 +1,16 @@
+#contact-content{
+    display: flex;
+    justify-content: row;
+    width: 100%;
+}
+#contact-content > div{
+    border-top: 1px solid var(--primary_color)
+}
+#form-side{
+    width: 50%;
+    border-right: 0.5px solid var(--primary_color);
+}
+#media-side{
+    width: 50%;
+    border-left: 0.5px solid var(--primary_color);
+}

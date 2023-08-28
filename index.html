@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="assets/styles/all.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/contact.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
-
+    <script src="assets/scripts/script.js" onload="writeText()" defer></script>
     <title>Meu Portifolio</title>
 </head>
 
@@ -29,23 +31,50 @@
     </header>
    
     <main>
-        <div id="home" class="full-screen color-primary">
-            <h1 id="apresentation">
+        <div id="home" class="topic full-screen color-primary">
+            <h1 id="apresentation" ></h1>
+            <!-- <h1 id="apresentation">
                 Olá, Sou <span class="text_emphasis"> Ewerson Lucas</span>, estudante de Ciências da Computação e <span class="text_emphasis">Desenvolvedor de Software</span> ! </h1>
-            <h2 id="apresentation-2">Bem vindo ao meu <span class="text_emphasis"> Portifolio</span> !</h2>    
+            <h2 id="apresentation-2">Bem vindo ao meu <span class="text_emphasis"> Portifolio</span> !</h2>     -->
             <span><img id="down-arrow" src="assets/imgs/arrow-down-2.svg" alt="down page"> </span>
         </div>
 
-        <div id="about" class="background-secondary full-screen color-secundary">
+        <div id="about" class="topic background-secondary full-screen color-secundary items-centralizer">
             <h1>ABOUT ME</h1>
+            <div id="about-content">
+                <div id="about-img">
+                    <img src="assets/imgs/eu-removebg-preview.png">
+                </div>
+                <div id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda quis officia deserunt neque, consequuntur esse minus saepe ex alias quidem enim, quibusdam harum, consectetur maxime ea? Molestiae, maiores natus!</div>
+            </div>
         </div>
 
-        <div id="projects" class="full-screen color-primary">
+        <div id="projects" class="topic full-screen color-primary items-centralizer">
             <h1>PROJECTS</h1>
         </div>
 
-        <div id="contact" class="background-secondary full-screen color-secundary">
+        <div id="contact" class="topic background-secondary full-screen color-secundary items-centralizer">
             <h1>CONTACT</h1>
+            <div id="contact-content">
+                <div id="form-side">
+                    <form action="#">
+                        <input type="text" name="name" id="name" placeholder="name">
+                        <input type="email" name="email" id="email" placeholder="email">
+                        <input type="text" name="subject" id="subject" placeholder="subject">
+                        <textarea name="message" id="message" cols="10" rows="5"></textarea>
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+                <div id="media-side">
+                    <ul>
+                        <li>Linkedln</li>
+                        <li>Github</li>
+                        <li>CodeWars</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 

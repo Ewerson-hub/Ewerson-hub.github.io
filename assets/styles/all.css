@@ -9,7 +9,8 @@
 :root{
     --primary_color : #4a3f2b;
     --color_font_secondary: #faf5e7;
-    /* contrate branco: #494949, contraste marron: 9eafce */
+    /* contrate branco: #494949, 
+    contraste marron: 9eafce */
     --emphasis_letter_color: #9eafce;
     --color_font_primary: var(--primary_color);
     --secondary_color:var(--color_font_secondary);
