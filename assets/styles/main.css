@@ -19,3 +19,18 @@ h1 > span{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: center;
 }
+
+#down-arrow:hover{
+    transform: scale(1.1);
+}
+
+/* #image-content-down-arrow{
+    -webkit-animation: move .3s 3 ease-in-out;
+}
+@keyframes move {
+    from {transform: translateY(0)}
+    50%   {transform: translateY(8px)}
+    to {
+        transform: translateY(-8px) 
+    }
+} */

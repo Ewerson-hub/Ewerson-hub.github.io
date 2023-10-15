@@ -4,13 +4,12 @@
     height: 100%; 
 }
 #about-content{
+    margin: 3rem 0 3rem 0;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-#about-content > div{
-    border: 1px solid red;
-}
+
 
 /* #about-img{
     width: 30%;
@@ -20,4 +19,13 @@
     border-radius: 50%;
     width: 400px;
     height: 400px;
+}
+#about-text{
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#about-text > p {
+    font-size: 2rem;
+    text-align: justify;
 }

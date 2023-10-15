@@ -1,16 +1,111 @@
+#contact{
+    max-width: 100vw;
+}
 #contact-content{
+    
     display: flex;
     justify-content: row;
     width: 100%;
+    margin: 3rem 0 2rem 0;
 }
-#contact-content > div{
-    border-top: 1px solid var(--primary_color)
+#form-side, #media-side{
+    width: 45%;
 }
-#form-side{
+#separator{
+    display: flex;
+    align-items: center;
+    font-size: 1.65rem;
+}
+.H1-contact-sides{
+    margin-bottom: 2rem;
+}
+/* --------------------FORM SIDE------------------------------- */
+#form{
+    width: 60%;
+    padding: 15px;
+    background-color: #bdad8e;
+    border-radius: 10px;
+}
+#name, #email, #subject, #message,#submit{
+    font-size: 1.4rem;
+    margin: .7rem;
+}
+#name, #email, #subject, #message{
+    padding-left: 1rem;
+    width: 100%;
+
+    border:none;
+    border-radius: 5px;
+    color:var(--primary_color);
+    font-weight: bold;
+}
+#name, #email, #subject{
+    height: 45px
+}
+#message {
+    padding-top: 1rem;
+}
+
+#submit{
+    border:none;
+
+    width: 25rem;
+    height: 4rem;
+
+    font-weight: bold;
+    font-size: 1.8rem;
+
+    opacity: .8;
+
+    border-radius: 1rem;
+    background-color: var(--primary_color);
+    color:var(--color_font_secondary);
+    transition: .35s linear;
+}
+#submit:hover{
+    opacity: 1;
+    width: 30rem;
+    height: 4.2rem;
+
+    transform: scale(1.08);
+    transition: .25s linear;
+}
+
+/* -------------------------MEDIA SIDE------------------------------------------ */
+#medias-list{
+
+    
+    margin:2rem;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#medias-list > li {
+    border: 1px solid var(--primary_color);
+    padding: 1rem;
+    opacity: .7;
     width: 50%;
-    border-right: 0.5px solid var(--primary_color);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
 }
-#media-side{
-    width: 50%;
-    border-left: 0.5px solid var(--primary_color);
+#medias-list > li > img{
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+}
+#medias-list > li > a {
+    text-align: start;
+    text-decoration: none;
+    color: var(--primary_color);
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+#medias-list > li:hover{
+    opacity: 1;
+    transform: scale(1.1);
 }

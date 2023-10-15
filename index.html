@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,83 +9,141 @@
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/projects.css">
     <link rel="stylesheet" href="assets/styles/contact.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
-    <script src="assets/scripts/script.js" onload="writeText()" defer></script>
+    <script src="assets/scripts/script.js" onload="onloadPage()" defer></script>
     <title>Meu Portifolio</title>
 </head>
 
 <body class="background-primary">
     <header class="color-primary">
-       <span id="span-logo">
+        <span id="span-logo">
             <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
             Ewerson
-       </span>
+        </span>
         <nav>
             <ul>
-                <li><a class="color-primary" href="#home">Home</a></li>
+                <li><a class="color-primary" href="#main">Home</a></li>
                 <li><a class="color-primary" href="#about">About Me</a></li>
                 <li><a class="color-primary" href="#projects">Projects</a></li>
                 <li><a class="color-primary" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-   
-    <main>
+
+    <main id="main">
         <div id="home" class="topic full-screen color-primary">
-            <h1 id="apresentation" ></h1>
-            <!-- <h1 id="apresentation">
-                Olá, Sou <span class="text_emphasis"> Ewerson Lucas</span>, estudante de Ciências da Computação e <span class="text_emphasis">Desenvolvedor de Software</span> ! </h1>
-            <h2 id="apresentation-2">Bem vindo ao meu <span class="text_emphasis"> Portifolio</span> !</h2>     -->
-            <span><img id="down-arrow" src="assets/imgs/arrow-down-2.svg" alt="down page"> </span>
+            <h1 id="apresentation"></h1>
+            <h2 id="apresentation-2"></h2>
+            <span id="image-content-down-arrow">
+                <img id="down-arrow" src="assets/imgs/arrow-down-2.svg" alt="down page">
+            </span>
         </div>
 
         <div id="about" class="topic background-secondary full-screen color-secundary items-centralizer">
-            <h1>ABOUT ME</h1>
+            <h1 class="title-section">ABOUT ME</h1>
             <div id="about-content">
                 <div id="about-img">
                     <img src="assets/imgs/eu-removebg-preview.png">
                 </div>
-                <div id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda quis officia deserunt neque, consequuntur esse minus saepe ex alias quidem enim, quibusdam harum, consectetur maxime ea? Molestiae, maiores natus!</div>
+                <div id="about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis quisquam optio consequatur
+                        nisi magnam facilis accusamus amet? Cum voluptate distinctio magnam nobis et saepe voluptas
+                        minus voluptatem dolorem harum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis quisquam optio consequatur
+                        nisi magnam facilis accusamus amet? Cum voluptate distinctio magnam nobis et saepe voluptas
+                        minus voluptatem dolorem harum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis quisquam optio consequatur
+                        nisi magnam facilis accusamus amet? Cum voluptate distinctio magnam nobis et saepe voluptas
+                        minus voluptatem dolorem harum.</p>
+                </div>
             </div>
         </div>
 
         <div id="projects" class="topic full-screen color-primary items-centralizer">
-            <h1>PROJECTS</h1>
+            <h1 class="title-section">PROJECTS</h1>
+            <div id="projects-space">
+                <div class="project-card">
+                    <div class="img">
+                        <img src="assets/imgs/computer.avif" alt="project1">
+                    </div>
+                    <h2 class="project-title">PDF Organizer</h2>
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="assets/imgs/computer.avif" alt="project1">
+                    </div>
+                    <h2 class="project-title">PokeDex</h2>
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="assets/imgs/computer.avif" alt="project1">
+                    </div>
+                    <h2 class="project-title">Harvard Project</h2>
+                    <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+                <a id="more-projects" href="#"><h2>More Projects ...</h2></a>
+            
         </div>
+            <div id="contact" class="topic background-secondary full-screen color-secundary items-centralizer">
+            <h1 class="title-section">CONTACT</h1>
 
-        <div id="contact" class="topic background-secondary full-screen color-secundary items-centralizer">
-            <h1>CONTACT</h1>
             <div id="contact-content">
-                <div id="form-side">
-                    <form action="#">
-                        <input type="text" name="name" id="name" placeholder="name">
-                        <input type="email" name="email" id="email" placeholder="email">
-                        <input type="text" name="subject" id="subject" placeholder="subject">
-                        <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                <div id="form-side" class="items-centralizer">
+                    <h1 class="H1-contact-sides">Send me a Email</h1>
+                    <form class="items-centralizer" id="form" action="#">
 
-                        <button type="submit">Submit</button>
+                        <input class="space-around" type="text" name="name" id="name" placeholder="Your Name : " required>
+                        <input class="space-around" type="email" name="email" id="email" placeholder="Your Email : "required>
+                        <input class="space-around" type="text" name="subject" id="subject" placeholder="Subject : "required>
+                        <textarea class="space-around" name="message" id="message" cols="10" rows="5"
+                            placeholder="Message..."required></textarea>
 
+                        <button type="submit" id="submit">Submit</button>
                     </form>
                 </div>
-                <div id="media-side">
-                    <ul>
-                        <li>Linkedln</li>
-                        <li>Github</li>
-                        <li>CodeWars</li>
+
+                <div id="separator">
+                    <h1>OR</h1>
+                </div>
+
+                <div id="media-side" class="items-centralizer">
+                    <h1 class="H1-contact-sides">Find me on My Social Medias</h1>
+                    <ul id="medias-list" class="items-centralizer">
+                        <li>
+                            <img src="assets/imgs/linkedin-icon.svg" alt="linkedln icon">
+                            <a href="#">Linkedln</a>
+                        </li>
+
+                        <li>
+                            <img src="assets/imgs/linkedin-icon.svg" alt="Github icon">
+                            <a href="#">Github</a>
+                        </li>
+
+                        <li>
+                            <img src="assets/imgs/linkedin-icon.svg" alt="CodeWars icon">
+                            <a href="#">Codewars</a>
+                        </li>
+
+                        <li>
+                            <img src="assets/imgs/linkedin-icon.svg" alt="DIO icon">
+                            <a href="#">DIO</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
-
     <footer class="background-primary">
         <span>
-           <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
-        </span> 
+            <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
+        </span>
         <p>&copy 2023 Ewerson Lucas</p>
     </footer>
-    
-   
 </body>
+
 </html>
