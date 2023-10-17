@@ -1,0 +1,39 @@
+@media (max-width: 1256px){
+    #form{
+        min-width: 340px;
+    }
+    #medias-list > li{
+        min-width: 204px;
+    }
+    #medias-list > li{
+        margin-bottom: 10px;
+    }
+
+    #form-side, #media-side{
+        margin: 10px;
+        width: 437px;
+    }
+}
+@media (max-width: 1060px){
+    #projects-space{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px){
+    #about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 950px){
+    #contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px){
+    #projects-space{
+        grid-template-columns: 1fr;
+    }
+}

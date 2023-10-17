@@ -1,10 +1,9 @@
 #contact{
     max-width: 100vw;
 }
-#contact-content{
-    
+#contact-content{ 
     display: flex;
-    justify-content: row;
+    justify-content: center;
     width: 100%;
     margin: 3rem 0 2rem 0;
 }
@@ -49,7 +48,7 @@
 #submit{
     border:none;
 
-    width: 25rem;
+    width: 80%;
     height: 4rem;
 
     font-weight: bold;
@@ -64,7 +63,7 @@
 }
 #submit:hover{
     opacity: 1;
-    width: 30rem;
+    width: 100%;
     height: 4.2rem;
 
     transform: scale(1.08);
@@ -73,8 +72,7 @@
 
 /* -------------------------MEDIA SIDE------------------------------------------ */
 #medias-list{
-
-    
+ 
     margin:2rem;
     width: 70%;
     height: 70%;

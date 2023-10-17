@@ -17,8 +17,8 @@
 } */
 #about-img > img{
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 40rem;
+    height: 40rem;
 }
 #about-text{
     padding: 5rem;
