@@ -4,21 +4,31 @@
 #contact-content{ 
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     margin: 3rem 0 2rem 0;
 }
+/* #contact-content{ 
+    display: grid;
+    grid-template-columns: 1fr .125fr 1fr;
+    justify-content: center;
+    width:100vw;
+    margin: 3rem 0 2rem 0;
+} */
 #form-side, #media-side{
-    width: 45%;
+    min-width: 45%;
 }
+
+.H1-contact-sides{
+    margin-bottom: 2rem;
+}
+/* --------------------FORM SIDE------------------------------- */
+
 #separator{
     display: flex;
     align-items: center;
     font-size: 1.65rem;
 }
-.H1-contact-sides{
-    margin-bottom: 2rem;
-}
-/* --------------------FORM SIDE------------------------------- */
+
 #form{
     width: 60%;
     padding: 15px;
@@ -27,7 +37,7 @@
 }
 #name, #email, #subject, #message,#submit{
     font-size: 1.4rem;
-    margin: .7rem;
+    padding: .7rem;
 }
 #name, #email, #subject, #message{
     padding-left: 1rem;
@@ -72,19 +82,19 @@
 
 /* -------------------------MEDIA SIDE------------------------------------------ */
 #medias-list{
- 
-    margin:2rem;
     width: 70%;
     height: 70%;
+
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 #medias-list > li {
     border: 1px solid var(--primary_color);
-    padding: 1rem;
+    padding: 10px;
     opacity: .7;
     width: 50%;
+    height: 6rem;
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 0.5fr 1fr;

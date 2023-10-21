@@ -53,6 +53,7 @@ function dropdowList(){
             position:fixed;
 
             top:20vh;
+            left:0;
             right:0;
             bottom:0;
 
@@ -69,7 +70,7 @@ function dropdowList(){
 
         `;
         document.getElementById('nav-list').style.cssText += `
-            
+            padding-top:10px;
         `;
         for(let i = 0; i < 4; i++){
             document.getElementsByClassName('nav-list-li')[i].addEventListener('click', () => {
