@@ -19,18 +19,36 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 950px){
+    #contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+    }
+    nav > ul >li >a{ 
+        padding: 20px;
+    }
+    #bars-icon{
+        display: block;
+    }
+    #bars-icon > img {
+        width: 80px;
+    }
+}
+
 @media (max-width: 800px){
     #about-content{
         flex-direction: column;
         text-align: center;
     }
 }
-@media (max-width: 950px){
-    #contact-content{
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 @media (max-width: 650px){
     #projects-space{

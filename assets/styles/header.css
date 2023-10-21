@@ -1,8 +1,9 @@
 header{
     height: 20vh;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+
     align-items: center;
     padding-right: 2rem;
 
@@ -13,6 +14,8 @@ header{
     left: 0;
     top:0;
     clear: both;
+
+    z-index: 3;
 }
 
 nav{
@@ -41,3 +44,11 @@ img{
     height: 100px;
     color: var(--color_font_primary);
 }
+
+#bars-icon{
+    display: none;
+    flex-direction: column;
+
+    width: 90px;
+}
+

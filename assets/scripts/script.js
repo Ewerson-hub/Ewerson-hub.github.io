@@ -36,3 +36,59 @@ function moveDownArrow (){
         iterations: 5
     })
 }
+//simule the effect of the checkbox in a img tag
+let dropDown = false;
+
+function dropdowList(){
+    alterBarsIconTo('close');
+
+    dropDown = !dropDown
+
+
+    if(dropDown){
+        document.getElementById('nav-list').style.cssText += `
+            display:block;
+            position:fixed;
+
+            top:20vh;
+            right:0;
+            bottom:0;
+
+            width:100vw;
+            height:100vh;
+            
+            background-color: #4a3f2b;
+
+            text-align:center; 
+
+            padding-top: 30px;
+
+            font-size:5.5rem;
+            z-index: 3;
+        `;
+        document.getElementById('nav-list').style.cssText += `
+            
+        `;
+        for(let i = 0; i < 4; i++){
+            document.getElementsByClassName('nav-list-li')[i].addEventListener('click', () => {
+                closeDropDownList();
+                dropDown = false;
+            })
+        }
+    }else{
+        closeDropDownList();  
+    }
+}
+
+function closeDropDownList(){
+    alterBarsIconTo('bars');
+    document.getElementById('nav-list').style.display = 'none';
+}
+
+function alterBarsIconTo(type){
+    let path = "";
+
+    (type == 'close')? path = "assets/imgs/close-icon.svg":path = "assets/imgs/bars-icon.svg";
+
+    document.getElementById('bars-icon').src = path;
+}

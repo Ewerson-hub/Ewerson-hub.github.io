@@ -19,17 +19,21 @@
 </head>
 
 <body class="background-primary">
-    <header class="color-primary">
+    <header id="header" class="color-primary">
         <span id="span-logo">
             <img id="atom-icon" src="assets/imgs/atom_icon3.svg" alt="Atom Icon">
             Ewerson
         </span>
-        <nav>
-            <ul>
-                <li><a class="color-primary" href="#main">Home</a></li>
-                <li><a class="color-primary" href="#about">About Me</a></li>
-                <li><a class="color-primary" href="#projects">Projects</a></li>
-                <li><a class="color-primary" href="#contact">Contact</a></li>
+        <nav id="nav">
+            <label for="bars-icon">
+                <img id='bars-icon' src="assets/imgs/bars-icon.svg" alt="bars-icon" onclick="dropdowList()">
+            </label>
+    
+             <ul id="nav-list">
+                <li><a class="nav-list-li color-primary" href="#main">Home</a></li>
+                <li><a class="nav-list-li color-primary" href="#about">About Me</a></li>
+                <li><a class="nav-list-li color-primary" href="#projects">Projects</a></li>
+                <li><a class="nav-list-li color-primary" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
