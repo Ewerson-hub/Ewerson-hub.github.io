@@ -1,9 +1,10 @@
 main{
     padding-top: 20vh;
     color: var(--color_font_primary);
-
+    
     font-size: 1.5rem;
 }
+
 
 h1 > span{
     padding-left: 5px;
@@ -23,14 +24,3 @@ h1 > span{
 #down-arrow:hover{
     transform: scale(1.1);
 }
-
-/* #image-content-down-arrow{
-    -webkit-animation: move .3s 3 ease-in-out;
-}
-@keyframes move {
-    from {transform: translateY(0)}
-    50%   {transform: translateY(8px)}
-    to {
-        transform: translateY(-8px) 
-    }
-} */

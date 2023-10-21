@@ -9,12 +9,6 @@
     flex-direction: row;
     width: 100%;
 }
-
-
-/* #about-img{
-    width: 30%;
-    height: 80vh;
-} */
 #about-img > img{
     border-radius: 50%;
     width: 40rem;

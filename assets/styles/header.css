@@ -31,6 +31,9 @@ ul{
 li > a{
     text-decoration: none;
 }
+li{
+    height: 25%;
+}
 
 #span-logo{
     margin-left: 20px;

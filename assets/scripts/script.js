@@ -47,6 +47,8 @@ function dropdowList(){
 
     if(dropDown){
         document.getElementById('nav-list').style.cssText += `
+            margin:0;   
+
             display:block;
             position:fixed;
 
@@ -60,11 +62,11 @@ function dropdowList(){
             background-color: #4a3f2b;
 
             text-align:center; 
-
             padding-top: 30px;
 
             font-size:5.5rem;
             z-index: 3;
+
         `;
         document.getElementById('nav-list').style.cssText += `
             
