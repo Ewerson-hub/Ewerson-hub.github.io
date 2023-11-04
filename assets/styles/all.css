@@ -52,7 +52,7 @@ html, body{
     margin: 2rem;
 }
 .border{
-    border: 3px solid white;
+    border: 3px solid red;
 }
 .title-section{
     font-size: 4rem;

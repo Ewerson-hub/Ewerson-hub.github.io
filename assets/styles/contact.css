@@ -16,6 +16,7 @@
 } */
 #form-side, #media-side{
     min-width: 45%;
+    max-width: 100%;
 }
 
 .H1-contact-sides{
@@ -30,7 +31,7 @@
 }
 
 #form{
-    width: 60%;
+    max-width: 60%;
     padding: 15px;
     background-color: #bdad8e;
     border-radius: 10px;
