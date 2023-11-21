@@ -1,7 +1,7 @@
 @media (max-width: 1256px){
-    #form{
+    /* #form{
         min-width: 340px;
-    }
+    } */
     #medias-list > li{
         min-width: 204px;
     }
@@ -11,7 +11,6 @@
 
     #form-side, #media-side{
         padding: 10px;
-        width: 437px;
     }
 }
 /*-----------------------------------*/
@@ -20,14 +19,23 @@
     #projects-space{
         grid-template-columns: 1fr 1fr;
     }
+    #form-side, #media-side{
+        width: 60%;
+    }
 }
 
 /*-----------------------------------*/
 /*-----------------------------------*/
-@media (max-width: 950px){
+@media (max-width: 995px){
     #contact-content{
         flex-direction: column;
         align-items: center;
+    }
+    #form-side, #media-side {
+        width: 100vw;
+    }
+    #form, #media-list, #medias-list > li{
+        width: 70%;
     }
     nav > ul{
         display: none;
@@ -72,9 +80,7 @@
 /*-----------------------------------*/
 
 @media (max-width: 360px){
-    #form{
-        min-width: 80vw;
-    }
+   
     #about-img > img{
         width: 30rem;
         height: 30rem;
