@@ -1,0 +1,91 @@
+.project-description{
+    display: none;
+    position: absolute;
+    
+}
+#projects {
+    background-color: var(--primary_color);
+    
+}
+#projects-space{
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5rem;
+    height: 400px;
+}
+
+.project-card{
+    border-radius: 5px;
+    background-color: var(--color_font_secondary);
+    color: black;
+    margin: 3rem;
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+
+    transition: ease;   
+    position: relative;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease;
+}
+.img >  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#more-projects{
+    background-color: var(--color-header);
+    border-radius: 5px;
+
+    padding: 1.5rem;
+    margin: 1rem 0 3rem 0;
+
+    max-width: 100vw;
+    width: 25rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+
+    color: var(--color_font_secondary);
+    text-decoration: none;
+
+    transition: all .5s ease;
+}
+
+
+/* Animations */
+
+.project-card:hover{
+    
+  .img{
+    padding: 1rem;
+    height: 45%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .project-description{ 
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    display: block;
+  }
+  .more-info{
+    display: none;
+  }
+
+}
+#more-projects:hover{
+    box-shadow: 2px 2px 1px 1px var(--color_font_secondary);
+    transition: all .1s ease-in-out;
+}
+
+
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    
+}
+html, body{
+    max-width: 100vw;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-header:#615031;
+    --primary_color : #4a3f2b;
+    --color_font_secondary: #faf5e7;
+    --emphasis_letter_color: #9eafce;
+    --color_font_primary: var(--primary_color);
+    --secondary_color:var(--color_font_secondary);
+    font-family: 'Handlee','sans-serif';
+
+    font-size: 10px;
+}
+.full-screen{
+    max-width: 100vw;
+    min-height: 100vh;
+}
+.background-primary{
+    background-color: var(--primary_color);
+}
+.color-primary{
+    color: var(--color_font_secondary);
+}
+.background-secondary{
+    background-color: var(--secondary_color);
+}
+.color-secundary{
+    color: var(--color_font_primary);
+}
+.text_emphasis{
+    color: var(--emphasis_letter_color);
+}
+.items-centralizer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.space-around{
+    margin: 2rem;
+}
+.border{
+    border: 3px solid red;
+}
+.title-section{
+    font-size: 4rem;
+}

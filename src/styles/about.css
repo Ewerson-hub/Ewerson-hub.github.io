@@ -1,0 +1,27 @@
+#about{
+    font-weight: bold;
+    width: 100%;
+    height: 100%; 
+}
+#about-content{
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#about-img > img{
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+}
+#about-text{
+    max-width: 100vw;
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+#about-text > p {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}

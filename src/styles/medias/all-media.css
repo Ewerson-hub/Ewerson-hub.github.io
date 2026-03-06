@@ -1,0 +1,120 @@
+@media (max-width: 1256px){
+    #medias-list > li{
+        min-width: 204px;
+    }
+    #medias-list > li{
+        margin-bottom: 10px;
+    }
+
+    #form-side, #media-side{
+        padding: 10px;
+    }
+}
+/*-----------------------------------*/
+/*-----------------------------------*/
+@media (max-width: 1065px){
+    #span-logo > img{
+        width: 4rem;
+        height: 4rem;
+    }
+    #nav{
+        font-size: 2.3rem;
+    }
+    #home{
+        font-size: 1.4rem;
+    }
+    #projects-space{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 1000px;
+    }
+    #form-side, #media-side{
+        width: 60%;   
+    }
+    #separator{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/*-----------------------------------*/
+/*-----------------------------------*/
+@media (max-width: 995px){
+    #about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    #contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #form-side, #media-side {
+        width: 100vw;
+    }
+    
+    #form, #media-list, #medias-list > li{
+        width: 90%;
+    }
+    #separator{
+        padding: 15px 0 15px 0;
+    }
+    nav > ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+    }
+    nav > ul >li > a{ 
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #bars-icon{
+        display: block;
+    }
+    #bars-icon > img {
+        width: 80px;
+    }
+}
+/*-----------------------------------*/
+/*-----------------------------------*/
+
+@media (max-width: 650px){
+    #home {
+        gap: 4rem;
+    }
+    #about-img > img{
+        width: 25rem;
+        height: 25rem;
+    }
+    #home{
+        font-size: 1.3rem;
+    }
+    footer{
+        font-size: 2rem;
+    }
+    footer > span{
+        width: 25%;
+    }
+}
+/*-----------------------------------*/
+/*-----------------------------------*/
+
+@media (max-width: 450px){
+   
+    #about-img > img{
+        width: 20rem;
+        height: 20rem;
+    }
+    #projects-space{
+        height: 1000px;
+    }
+    .project-card:hover{
+        .img{
+            padding: 1rem;
+            height: 35%;
+            transition: all 0.3s ease-in-out;
+          }
+        
+    }
+}
